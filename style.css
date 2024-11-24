@@ -1,6 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 
+   0px;
+    padding: 
+    0px;
     box-sizing: border-box;
 }
 
@@ -38,8 +40,9 @@ body {
 }
 
 #aboutPage {
-    background-color: #000000;
-    transform: translateY(-100%);
+    background-color: black;
+    transform: translateY(
+   -100%);
 }
 
 h1 {
@@ -59,13 +62,14 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #00000;
 }
 
 .cover-photo img {
     width: 200px;
     border-radius: 1%;
-    margin-bottom: 12px;
+    margin-bottom: 
+   -20px;
 }
 
 .about, .hobbies, .social-links {
@@ -90,11 +94,11 @@ a {
     display: inline-block;
     margin: 10px;
     text-decoration: none;
-    background-color: #264653;
-    padding: 10px 20px;
+    background-color: paleturquoise;
+    padding: 0px 0px;
     border-radius: 5px;
 }
 
 a:hover {
-    background-color: #e76f51;
-}
+    background-color: #000000;
+    }
