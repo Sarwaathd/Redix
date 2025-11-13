@@ -1,104 +1,165 @@
 * {
-    margin: 
-   0px;
-    padding: 
-    0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    overflow: hidden;
-    
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  
-    background-color: #fff;
-    transition: transform 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: transform 1s ease-in-out;
 }
 
+/* Welcome Page */
 #welcomePage {
-    background-color: #000000;
+  background-color: #000;
+  color: white;
 }
 
 #aboutPage {
-    background-color: black;
-    transform: translateY(
-   -100%);
+  background-color: #000;
+  transform: translateY(-100%);
 }
 
 h1 {
-    font-size: 2rem;
-    color: #264653;
+  font-size: 2rem;
+  color: #f4a261;
+  text-align: center;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #e76f51;
-    color: white;
-    border: none;
-    border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #00000;
+  background-color: gray;
 }
 
+/* About Page */
 .cover-photo img {
-    width: 200px;
-    border-radius: 1%;
-    margin-bottom: 
-   -20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  border: 3px solid white;
 }
 
-.about, .hobbies, .social-links {
-    margin: 25px 0;
-    text-align: center;
+.about, .EX, .social-links {
+  text-align: center;
+  margin: 20px 0;
 }
 
 h2 {
-    color: white;
+  color: white;
+  margin-bottom: 10px;
 }
 
-p, ul,h2,a {
-    color: dimgray
-  
-    
-    
-  ;
+p, ul, li {
+  color: #ccc;
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Social Links */
+.social-links a img {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.1);
+}
+.re{
+    position: relative;
+    top: 1rem;
+}
+.pe{
+    position: relative;
+    top: 1.8rem;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
     font-size: 1.2rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  .cover-photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
 }
 
-a {
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
-    background-color: paleturquoise;
-    padding: 0px 0px;
-    border-radius: 5px;
+@media (max-width: 480px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .page {
+    height: auto;
+    padding: 20px;
+  }
+
+  .social-links a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+  }
 }
 
-a:hover {
-    background-color: #000000;
-    }
